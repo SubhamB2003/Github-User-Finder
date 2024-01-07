@@ -30,7 +30,7 @@ function ContainerBox({ color }) {
             <div className='flex justify-center mt-12'>
                 <div className='w-[90%] md:w-[50%] xl:w-[34%] backdrop-blur-xl px-10 py-8 rounded-2xl space-y-6'>
                     <input className='w-full px-4 py-2 font-serif text-lg rounded-lg' value={username}
-                        onChange={(e) => setUsername(e.target.value)} />
+                        onChange={(e) => setUsername(e.target.value)} placeholder="Enter github username..." />
                     <div className='flex justify-center'>
                         <button disabled={username.length !== 0 ? false : true}
                             className={`flex justify-center items-center w-[100%] md:w-[40%] bg-${color}-500 py-2 font-serif font-semibold text-white text-xl rounded-lg`}
